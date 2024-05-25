@@ -3,56 +3,51 @@ const background = [
         eduCards: [
             {
                 id: 0,
-                title: 'UET Peshawar',
-                degree: 'BS, Computer System Engineering',
-                detail: "Bachelor's Degree in Computer System Engineering from UET Peshawar.",
-                year: '2018-2022'
+                title: 'Dr. APJ Abdul Kalam Technical University,Lucknow',
+                degree: 'MCA, Computer Applications and Science',
+                detail: "Completed  MCA with web development, python programming .database management and computer applications",
+                year: '2018-2021'
             },
+
             {
                 id: 1,
-                title: 'Peshawar Model Degree College',
-                degree: 'HSSC, Pre Engineering',
-                detail: "Completed FSC part 1 and part 2 in Pre-Engineering from Peshawar Model Degree College.",
-                year: '2015-2017'
+                title: 'Chhatrapati Sahuji Maharaj University ,Kanpur',
+                degree: 'B.Sc, Science & Mathmetics',
+                detail: "Completed B.Sc. from Physics, chemistry and Mathemetics",
+                year: '2014-2017'
             },
             {
                 id: 2,
-                title: 'Falcon Academy',
-                degree: 'SSC, Science Subjects',
-                detail: "Completed SSC part 1 and part 2 in Science subjects from Falcon Academy Seni Gumbat Kohat",
-                year: '2013-2015'
+                title: 'Gopal Saraswati Vidhya Mandir Highschool and intermediate Collage,Raebareli',
+                degree: '10+2',
+                detail: "Physics, Mathemetics and Chemistry, UP Board Allahabad ,Utter Pradesh",
+                year: '2012-2014'
             },
+
         ]
     },
     {
         expCards: [
             {
                 id: 1,
-                title: 'JMM Technologies',
-                role: 'Frontend Developer',
-                url: 'https://jmm.ltd/',
-                desc: 'As a frontend developer, I use React, Next & JavaScript to build user interfaces for web applications.',
-                year: '02/2023 - Present',
-                location: 'Peshawar, Pakistan'
+                title: 'Wiseneosco India Pvt. Ltd',
+                role: 'Full Stack Developer',
+                url: 'https://www.wiseneoscoindia.com/',
+                desc: 'As a Full Stack Developer at Wiseneosco India Pvt Ltd, you develop and maintain both front-end and back-end components of web applications.my responsibilities include creating user interfaces, writing server-side logic, managing databases, and integrating APIs.',
+                year: '03/2023 - Present',
+                location: 'Gr. noida, India'
             },
             {
                 id: 2,
-                title: 'HauzaTech',
-                role: 'Internee',
-                url: 'no website',
-                desc: 'As an Internee, I learned how to use React & JavaScript to build interactive websites.',
-                year: '02/2023 - Present',
-                location: 'Peshawar, Pakistan'
-            },
-            {
-                id: 3,
-                title: 'Encoder Bytes',
-                role: 'PHP Developer',
-                url: 'https://www.encoderbytes.com/',
-                desc: "I work there as a PHP developer, there I learned how to do CRUD'S operations in PHP, also I worked on Firebase",
-                year: '09/2020 - 02/2021',
-                location: 'Peshawar, Pakistan'
-            },
+                title: 'ByPeoples Technologies Pvt. Ltd',
+                role: 'React Developer',
+                url: 'https://bypeopletechnologies.com/',
+                desc: 'As a React developer, I use React, Next & JavaScript to build user interfaces for web applications.',
+                year: '04/2022 - 03/2023',
+                location: 'Ahamdabad, India'
+            }
+
+
 
         ]
     }

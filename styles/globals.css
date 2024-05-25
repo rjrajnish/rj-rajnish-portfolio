@@ -4,11 +4,12 @@
 
 body {
     /* transition: all; */
-    background-color: #000  !important;
+    /* background-color: #000  !important; */
     /* padding: 0.8rem; */
     /* transition: width 5s ease-in .2s; */
     overflow: hidden;
     height: 100vh;
+    background-color: #070123  !important;
 }
 
 @layer utilities {
