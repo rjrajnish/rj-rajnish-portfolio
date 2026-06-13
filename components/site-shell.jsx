@@ -98,7 +98,7 @@ function Topbar({ onMenuOpen }) {
               className="flex h-9 w-9 items-center justify-center rounded-xl border border-[var(--border)] bg-white/5 text-[var(--muted)] transition hover:text-white md:hidden"
               aria-label="Open menu"
             >
-              <Icon name="menu-2" className="h-4 w-4" />
+              <Icon name="menu" className="h-4 w-4" />
             </button>
 
             {/* Profile panel toggle (desktop) */}
@@ -108,7 +108,7 @@ function Topbar({ onMenuOpen }) {
               className="hidden h-9 w-9 items-center justify-center rounded-xl border border-[var(--border)] bg-white/5 text-[var(--muted)] transition hover:text-white md:flex"
               aria-label="Open profile panel"
             >
-              <Icon name="layout-sidebar-right" className="h-4 w-4" />
+              <Icon name="layout" className="h-4 w-4" />
             </button>
           </div>
         </div>

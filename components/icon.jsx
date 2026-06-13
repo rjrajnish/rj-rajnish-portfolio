@@ -146,6 +146,172 @@ export default function Icon({ name, className = "h-5 w-5", strokeWidth = 1.8 })
           />
         </svg>
       );
+      case "building":
+  return (
+    <svg {...commonProps}>
+      <path
+        d="M4 21H20M6 21V7C6 5.895 6.895 5 8 5H16C17.105 5 18 5.895 18 7V21M9 9H10M14 9H15M9 13H10M14 13H15M9 17H10M14 17H15"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+  case "layers":
+  return (
+    <svg {...commonProps}>
+      <path
+        d="M12 3L3 8L12 13L21 8L12 3Z"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M3 12L12 17L21 12"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M3 16L12 21L21 16"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+  case "layout":
+  return (
+    <svg {...commonProps}>
+      <rect
+        x="3"
+        y="4"
+        width="18"
+        height="16"
+        rx="2"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+      />
+      <path
+        d="M9 4V20"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+      />
+      <path
+        d="M9 10H21"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+      />
+    </svg>
+  );
+  case "robot":
+  return (
+    <svg {...commonProps}>
+      <rect
+        x="5"
+        y="7"
+        width="14"
+        height="10"
+        rx="3"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+      />
+      <path
+        d="M12 3V7"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+      />
+      <circle cx="9" cy="12" r="1" fill="currentColor" />
+      <circle cx="15" cy="12" r="1" fill="currentColor" />
+      <path
+        d="M10 15H14"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+  case "server":
+  return (
+    <svg {...commonProps}>
+      <rect
+        x="3"
+        y="4"
+        width="18"
+        height="6"
+        rx="2"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+      />
+      <rect
+        x="3"
+        y="14"
+        width="18"
+        height="6"
+        rx="2"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+      />
+      <circle cx="7" cy="7" r="1" fill="currentColor" />
+      <circle cx="7" cy="17" r="1" fill="currentColor" />
+    </svg>
+  );
+  case "cloud":
+  return (
+    <svg {...commonProps}>
+      <path
+        d="M18 18H7A4 4 0 1 1 7.5 10A5.5 5.5 0 0 1 18 8.5A4.5 4.5 0 1 1 18 18Z"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+  case "git-pull-request":
+  return (
+    <svg {...commonProps}>
+      <circle
+        cx="6"
+        cy="6"
+        r="3"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+      />
+      <circle
+        cx="18"
+        cy="18"
+        r="3"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+      />
+      <path
+        d="M6 9V18C6 18 6 18 12 18"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M12 6H18"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+      />
+      <path
+        d="M15 3L18 6L15 9"
+        stroke="currentColor"
+        strokeWidth={strokeWidth}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
     default:
       return null;
   }
