@@ -24,7 +24,7 @@ const circular = localFont({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const siteUrl =  "https://rjrajnish.netlify.app";
 const metadataBase = siteUrl ? new URL(siteUrl) : undefined;
 const title =
   "Rajnish Pandey | Senior Full Stack Developer | Next.js, React.js, TypeScript, Node.js, AI Engineer";
@@ -90,12 +90,13 @@ export const metadata = {
     ],
   },
   twitter: {
-    card: "summary_large_image",
-    title,
-    description,
-    creator: "@rjrajnish9090",
-    images: ["/images/rajnishpic.png"],
-  },
+  card: "summary_large_image",
+  site: "@rjrajnish9090",
+  creator: "@rjrajnish9090",
+  title,
+  description,
+  images: [`${siteUrl}/images/rajnishpic.png`],
+},
   robots: {
     index: true,
     follow: true,
@@ -202,6 +203,22 @@ export default function RootLayout({ children }) {
     logo: siteUrl ? `${siteUrl}/images/rajnishpic.png` : undefined,
     founder: profile.name,
   };
+  const socialProfileSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+
+  name: profile.name,
+  url: siteUrl,
+  image: `${siteUrl}${profile.image}`,
+
+  sameAs: [
+    profile.socials.linkedin,
+    profile.socials.github,
+    profile.socials.twitter,
+    profile.socials.facebook,
+    "https://www.instagram.com/rjrajnish",
+  ],
+};
   return (
     <html lang="en">
       <body
@@ -234,6 +251,12 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify(organizationSchema),
           }}
         />
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(socialProfileSchema),
+  }}
+/>
         {children}
       </body>
     </html>
