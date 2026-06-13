@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+:root {
+  --background: #07111f;
+  --background-accent: #0b1628;
+  --background-warm: #13233e;
+  --panel: rgba(8, 18, 34, 0.86);
+  --panel-strong: rgba(10, 23, 42, 0.96);
+  --panel-soft: rgba(15, 27, 49, 0.76);
+  --border: rgba(154, 176, 204, 0.16);
+  --border-strong: rgba(154, 176, 204, 0.28);
+  --foreground: #f5f7fb;
+  --muted: #97a8c2;
+  --brand:        #7C3AED   (violet-600)
+  --brand-mid:    #6D28D9   (violet-700)
+   --brand-soft:   rgba(124,58,237,0.12)
+   --brand-glow:   rgba(124,58,237,0.18)
+   --surface:      #0E0E16
+   --surface-soft: rgba(255,255,255,0.04)
+   --surface-mid:  rgba(255,255,255,0.07)
+   --border:       rgba(255,255,255,0.08)
+   --border-strong:rgba(255,255,255,0.14)
+   --muted:        rgba(255,255,255,0.52)
+   --muted-light:  rgba(255,255,255,0.32)
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(125, 211, 252, 0.16), transparent 24%),
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.12), transparent 26%),
+    linear-gradient(180deg, var(--background-warm), var(--background));
+  color: var(--foreground);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(94, 234, 212, 0.3);
+}
+
+@layer components {
+  .surface {
+    @apply rounded-3xl border backdrop-blur-xl;
+    background-color: var(--panel);
+    border-color: var(--border);
+    box-shadow: var(--shadow);
+  }
+
+  .surface-strong {
+    @apply rounded-3xl border;
+    background-color: var(--panel-strong);
+    border-color: var(--border);
+  }
+
+  .surface-soft {
+    @apply rounded-3xl border backdrop-blur-xl;
+    background-color: var(--panel-soft);
+    border-color: var(--border);
+  }
+
+  .section-title {
+    @apply text-2xl font-semibold tracking-tight text-white sm:text-3xl lg:text-4xl;
+  }
+
+  .section-copy {
+    color: var(--muted);
+  }
+
+  .pill {
+    @apply inline-flex items-center rounded-full border px-3 py-1 text-xs;
+    border-color: var(--border);
+    color: var(--muted);
+    background-color: rgba(148, 163, 184, 0.08);
+  }
+
+  .input {
+    @apply w-full rounded-2xl border px-4 py-3 outline-none transition;
+    border-color: var(--border);
+    background-color: rgba(15, 23, 42, 0.72);
+  }
+
+  .input:focus {
+    border-color: rgba(94, 234, 212, 0.7);
+    box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.16);
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-full px-5 py-3 font-medium transition;
+    background-color: var(--brand);
+    color: #082235;
+  }
+
+  .button-primary:hover {
+    background-color: var(--brand-strong);
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center rounded-full border px-5 py-3 font-medium transition;
+    border-color: var(--border);
+    background-color: rgba(15, 23, 42, 0.48);
+  }
+
+  .button-secondary:hover {
+    background-color: rgba(30, 41, 59, 0.85);
+  }
+
+  .mesh-card {
+    background-image:
+      linear-gradient(135deg, rgba(125, 211, 252, 0.14), transparent 42%),
+      radial-gradient(circle at top right, rgba(125, 211, 252, 0.12), transparent 28%);
+  }
+
+  .grid-faint {
+    background-image:
+      linear-gradient(rgba(154, 176, 204, 0.07) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(154, 176, 204, 0.07) 1px, transparent 1px);
+    background-size: 36px 36px;
+  }
+}

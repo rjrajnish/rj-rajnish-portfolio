@@ -1,44 +1,24 @@
 <div align="center">
-  
- 
-
-  <h2 align="center">Rajnish Pandey - Personal portfolio</h2>
-
-This website is fully responsive personal portfolio, <br />Responsive for all devices, built using Nextjs, TailwindCSS only.
-
-<!-- <a href="https://osamajavaid.vercel.app/"><strong>➥ Live Demo</strong></a> -->
-
+  <h2 align="center">Rajnish Pandey Portfolio</h2>
+  <p align="center">Rebuilt with the Next.js App Router and Tailwind CSS.</p>
 </div>
 
-<br />
+## Stack
 
- 
+- Next.js 16+
+- React 19
+- Tailwind CSS 4
+- Nodemailer for the contact route
 
- 
-
-### Prerequisites
-
-Before you begin, ensure you have met the following requirements:
-
-- [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
-
-### Run Locally
-
-To run **portfolio** locally, run this command on your git bash:
-
-Linux and macOS:
-
-```bash
-sudo git clone https://github.com/rjrajnish/rj-rajnish-portfolio
-```
-
-Windows:
+## Run locally
 
 ```bash
 git clone https://github.com/rjrajnish/rj-rajnish-portfolio
+cd rj-rajnish-portfolio
+npm install
+npm run dev
 ```
 
- 
-### License
+## Environment variables
 
-This project is **free to use** and does not contains any license.
+Copy `.env.example` to `.env.local` and fill in the SMTP values if you want the contact form to send email.
