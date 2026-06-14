@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = "https://rjrajnish.netlify.app";
+  const baseUrl = "https://rjrajnish.vercel.app";
 
   return [
     {
