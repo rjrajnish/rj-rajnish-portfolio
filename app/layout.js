@@ -109,9 +109,8 @@ export const metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/icon",
+    shortcut: "/icon",
   },
 };
 const websiteSchema = {
@@ -216,7 +215,7 @@ export default function RootLayout({ children }) {
     profile.socials.github,
     profile.socials.twitter,
     profile.socials.facebook,
-    "https://www.instagram.com/rjrajnish",
+    "https://www.instagram.com/rj_pandey.rajnish",
   ],
 };
   return (
