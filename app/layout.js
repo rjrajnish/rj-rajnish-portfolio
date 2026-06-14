@@ -24,7 +24,7 @@ const circular = localFont({
   display: "swap",
 });
 
-const siteUrl =  "https://rjrajnish.netlify.app";
+const siteUrl =  "https://rjrajnish.vercel.app";
 const metadataBase = siteUrl ? new URL(siteUrl) : undefined;
 const title =
   "Rajnish Pandey | Senior Full Stack Developer | Next.js, React.js, TypeScript, Node.js, AI Engineer";
