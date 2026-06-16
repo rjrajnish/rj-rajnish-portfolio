@@ -45,7 +45,7 @@ function Topbar({ onMenuOpen }) {
           {/* Logo / name */}
           <Link href="/" className="flex shrink-0 items-center gap-2.5 text-white">
             <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[var(--brand)]">
-              <span className="text-xs font-bold text-white">R</span>
+              <span className="text-xs font-bold text-white">RJ</span>
             </div>
             <span className="text-sm font-semibold tracking-tight">Rajnish Pandey</span>
             <span className="hidden rounded-full border border-[var(--border)] bg-white/5 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wider text-emerald-400 sm:inline">
@@ -83,13 +83,7 @@ function Topbar({ onMenuOpen }) {
               <Icon name="mail" className="h-4 w-4" />
               {profile.email}
             </Link>
-            <Link
-              href="/contact"
-              className="flex items-center gap-2 rounded-xl bg-[var(--brand)] px-4 py-1.5 text-sm font-medium text-white transition hover:bg-violet-700 active:scale-[0.97]"
-            >
-              Let&apos;s Talk
-              <Icon name="arrow-up-right" className="h-3.5 w-3.5" />
-            </Link>
+            
 
             {/* Mobile menu toggle */}
             <button
@@ -130,7 +124,7 @@ function Topbar({ onMenuOpen }) {
             <div className="mb-4 flex items-center justify-between">
               <Link href="/" className="flex items-center gap-2 text-white" onClick={() => setMobileOpen(false)}>
                 <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-[var(--brand)]">
-                  <span className="text-xs font-bold">R</span>
+                  <span className="text-xs font-bold">RJ</span>
                 </div>
                 <span className="text-sm font-semibold">Rajnish Pandey</span>
               </Link>
@@ -178,13 +172,7 @@ function Topbar({ onMenuOpen }) {
               >
                 <Icon name="linkedin" className="h-4 w-4" />
               </Link>
-              <Link
-                href="/contact"
-                className="ml-auto flex items-center gap-2 rounded-xl bg-[var(--brand)] px-4 py-2 text-sm font-medium text-white"
-                onClick={() => setMobileOpen(false)}
-              >
-                Let&apos;s Talk <Icon name="arrow-up-right" className="h-3.5 w-3.5" />
-              </Link>
+               
             </div>
           </div>
         </div>
