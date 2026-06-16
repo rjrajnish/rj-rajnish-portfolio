@@ -5,38 +5,18 @@ export default function sitemap() {
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 1.0,
     },
     {
-      url: `${baseUrl}/#about`,
+      url: `${baseUrl}/background`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
     },
     {
-      url: `${baseUrl}/#experience`,
+      url: `${baseUrl}/portfolio`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.9,
     },
     {
-      url: `${baseUrl}/#projects`,
+      url: `${baseUrl}/contact`,
       lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/#skills`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/#contact`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
   ];
 }
