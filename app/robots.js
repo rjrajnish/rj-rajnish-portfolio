@@ -30,7 +30,7 @@ export default function robots() {
         allow: "/",
       },
     ],
-    sitemap: "https://rjrajnish.vercel.app/sitemap.xml",
-    host: "https://rjrajnish.vercel.app",
+    sitemap: "https://rjrajnish.vercel.app/sitemap.xml"
+    
   };
 }
