@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { profile } from "../lib/site-data";
+import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 const circular = localFont({
   src: [
@@ -222,7 +223,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
     <head>
-  <Script
+         <GoogleTagManager gtmId="GTM-WBVHQKLC" />
+  {/* <Script
     id="gtm"
     strategy="afterInteractive"
   >
@@ -234,7 +236,7 @@ export default function RootLayout({ children }) {
       f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-WBVHQKLC');
     `}
-  </Script>
+  </Script> */}
 </head>
       <body
         className={`${circular.variable} font-[family-name:var(--font-circular)] antialiased`}

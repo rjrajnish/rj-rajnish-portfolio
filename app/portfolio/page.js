@@ -3,7 +3,12 @@ import Link from "next/link";
 import Icon from "../../components/icon";
 import SiteShell from "../../components/site-shell";
 import { projects } from "../../lib/site-data";
-
+export const metadata = {
+  title: "Portfolio",
+  alternates: {
+    canonical: "/portfolio",
+  },
+};
 export default function PortfolioPage() {
   return (
     <SiteShell>

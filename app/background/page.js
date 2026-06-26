@@ -1,8 +1,14 @@
 import Link from "next/link";
 import SiteShell from "../../components/site-shell";
 import { background } from "../../lib/site-data";
-
+export const metadata = {
+  title: "Background",
+  alternates: {
+    canonical: "/background",
+  },
+};
 function TimelineCard({ item }) {
+
   return (
     <article className="surface px-6 py-6">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">

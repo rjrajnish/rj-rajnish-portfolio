@@ -2,7 +2,12 @@ import ContactForm from "../../components/contact-form";
 import Icon from "../../components/icon";
 import SiteShell from "../../components/site-shell";
 import { profile } from "../../lib/site-data";
-
+export const metadata = {
+  title: "Contact",
+  alternates: {
+    canonical: "/contact",
+  },
+};
 const contactCards = [
   { label: "Country", value: "India" },
   { label: "City", value: "Noida" },
